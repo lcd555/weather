@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:background="@drawable/tq"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:id="@+id/li_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+        />
+        <Button
+            android:id="@+id/sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海"
+        />
+        <Button
+            android:id="@+id/jl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吉林"
+        />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/select_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/icon"
+        android:textSize="20sp"
+        android:text="上海" />
+
+	<ImageView
+	    android:id="@+id/icon"
+	    android:layout_width="70dp"
+	    android:layout_height="70dp"
+	    android:layout_alignLeft="@+id/li_btn"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="108dp"
+	    android:paddingBottom="5dp"
+	    android:src="@drawable/ic_launcher" />
+
+	<TextView
+	    android:id="@+id/select_weater"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/icon"
+	    android:layout_alignRight="@+id/icon"
+	    android:layout_below="@+id/icon"
+	    android:layout_marginTop="25dp"
+	    android:text="多云"
+	    android:textSize="18sp" />
+
+	<TextView
+	    android:id="@+id/temp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/icon"
+	    android:layout_alignRight="@+id/li_btn"
+	    android:layout_marginBottom="22dp"
+	    android:text="-7℃"
+	    android:textSize="22sp" />
+
+	<TextView
+	    android:id="@+id/wind"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/icon"
+	    android:layout_alignRight="@+id/pm"
+	    android:text="风力：3级"
+	    
+	    android:textSize="18sp" />
+
+	<TextView
+	    android:id="@+id/pm"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/temp"
+	    android:layout_marginRight="36dp"
+	    android:text="PM：100"
+	    android:textSize="18sp" />
+	
+</RelativeLayout>
